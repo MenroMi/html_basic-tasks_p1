@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Helps to understand who wrote this comment for screenreaders -->
+    <article aria-label="User comment by Sarah Dole" class="comment-card">
+      <header class="comment-card__header">
+        <!-- ALT: should be always filled to be readable for screenreaders -->
+        <!-- WIDTH/HEIGHT: Cumulative Layout Shift - helps to reserve a space for image and avoid layout jumps -->
+        <img
+          class="comment-card__avatar"
+          src="./profile-thumbnail.png"
+          alt="Profile Image of Sarah Dole"
+          width="48"
+          height="48"
+        />
+        <div class="comment-card__user-info">
+          <h3 class="text-lg">Sarah Dole</h3>
+          <p class="comment-card__user-link">
+            <!-- SPAN: screenreader will not read 'at sarahdole' aloud, but only person name  -->
+            <span aria-hidden="true">@</span><span>sarahdole</span>
+          </p>
+        </div>
+      </header>
+      <p class="comment-card__text">
+        I've been searching for high-quality abstract images for my design
+        projects, and I'm thrilled to have found this platform. The variety and
+        depth of creativity are astounding!
+      </p>
+    </article>
+  </body>
+</html>
